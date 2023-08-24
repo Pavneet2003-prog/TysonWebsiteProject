@@ -1,0 +1,299 @@
+/* below 1344 px */
+@media (max-width: 84em) {
+  .hero,
+  .about-col {
+    max-width: 120rem;
+  }
+  .primary-heading {
+    font-size: 4.4rem;
+  }
+}
+/* below 1200px/16px [Landscape tablets]*/
+@media (max-width: 75em) {
+  html {
+    /* 9/16=56% this will change entire style as we have used rem units  */
+    font-size: 56.25%;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .gheader {
+    padding: 0 3.2rem;
+  }
+  .hero,
+  .about-col {
+    gap: 4.8rem;
+  }
+  .header-nav-list {
+    gap: 3.2rem;
+  }
+  .employeOne.container,
+  .employeTwo.container {
+    padding: 3rem;
+  }
+}
+/* tablets 940/16=59 */
+@media (max-width: 59em) {
+  html {
+    /* 8/16=50 */
+    font-size: 50%;
+  }
+  .hero,
+  .about-col {
+    grid-template-columns: 1fr;
+    padding: 0 5rem;
+    gap: 6rem;
+  }
+  .heero-img {
+    width: 63%;
+  }
+  .about-img img {
+    align-self: center;
+    justify-self: center;
+    width: 53%;
+  }
+.ads{
+  padding: 3rem;
+}
+  .hero-text,
+  .hero-img,
+  .about-text {
+    text-align: center;
+  }
+  .about-img {
+    justify-self: center;
+    padding: 2rem;
+    box-shadow: none;
+  }
+
+  .form-grid {
+    /* 3/5=60% 2/5=40% */
+    grid-template-columns: 3fr 2fr;
+  }
+  .user-form {
+    grid-template-columns: 1fr;
+  }
+  .btn-form {
+    margin-top: 1.2rem;
+  }
+  .toggle-nav {
+    display: block;
+    z-index: 33;
+  }
+  .nav-open.header-nav{
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  /* showing close icon when navigtion class is there */
+  .nav-open .nav-icon[name="close"] {
+    display: block;
+  }
+  .nav-open .nav-icon[name="menu"] {
+    display: none;
+  }
+  .header-nav {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    /* hiding navigation visually */
+    opacity: 0;
+    /* making unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* hiding from screen readers */
+    visibility: hidden;
+    
+  }
+  .header-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .header-link:link,
+  .header-link:visited {
+    font-size: 3rem;
+  }
+  .section-about {
+    padding: 3rem 0;
+  }
+  .section-hero {
+    padding: 4.8rem 0;
+  }
+  .about-img {
+    align-items: center;
+  }
+  .gFooter {
+    padding: 6.8rem 0;
+  }
+
+}
+/* 700/16==44  (small tablets)*/
+@media (max-width: 44em) {
+  .grid-3-cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+  }
+  .gFooter {
+    padding: 5.8rem 0;
+  }
+  .lastOne {
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center;
+  }
+  .lastOne img {
+    width: 37%;
+  }
+  .lastOnee {
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center;
+  }
+  .lastOnee img {
+    width: 70%;
+  }
+  .features {
+    margin: 4.5rem 0;
+  }
+  .kids-section,
+  .adults-section {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 5rem;
+  }
+  .address-col,
+  .logo-col {
+    grid-column: span 3;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    grid-column: span 2;
+  }
+  .employeOne.container {
+    padding: 2rem;
+    grid-template-columns: 1fr 2fr;
+  }
+  .employeTwo.container {
+    padding: 2rem;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  
+  .about-col {
+    gap: 1rem;
+    grid-template-rows: 1fr 1fr;
+  }
+  .info-right .second-heading,
+  .info-left-two .second-heading {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+ 
+  .section-about {
+    padding: 4rem 0;
+  }
+  .about-img img {
+    width: 70%;
+  }
+  .info-right.description,
+  .info-right .description-text-light {
+    margin-bottom: 1.5rem;
+  }
+  .info-left-two .description,
+  .info-left-two .description-text-light {
+    margin-bottom: 1.2rem;
+  }
+  .info-right-two img,
+  .info-left img {
+    width: 100%;
+  }
+  .ads-section{
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+  
+}
+/* 550/16= 34 below 554px*/
+@media (max-width: 34em) {
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+  .about-img{
+    padding: 0;
+  }
+  .about-img img{
+    width: 100%;
+  }
+  .section-about{
+    padding: 0;
+    background-color: rgb(224, 220, 220);
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  
+  .heroo-img {
+    width: 80%;
+  }
+  .section-hero {
+    padding: 2.4rem 0 6rem 0;
+  }
+  .section-about{
+    padding: 3rem 0;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2rem 1rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .image-box {
+    height: 360px;
+    grid-row: 1;
+  }
+  .text-box {
+    padding: 3.2rem;
+  }
+  .employeTwo.container ,.employeOne.container{
+    grid-template-columns: 1fr;
+  }
+  
+  .employeTwo .info-left-two{
+    grid-row: 2;
+  }
+  .info-right,
+  .info-left-two {
+    text-align: center;
+  }
+  .kids-section,
+  .adults-section {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  
+  }
+  .product img{
+    width: 50%;
+    
+    box-shadow: 1px 1px 2rem #555;
+    }
+}
